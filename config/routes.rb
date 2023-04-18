@@ -20,4 +20,8 @@ Rails.application.routes.draw do
   get("/divide", { :controller => "math", :action => "divide_form"})
   get("/wizard_divide", { :controller => "math", :action => "divide_results"})
 
+
+  get("/street_to_coords/new", { :controller => "coordinates", :action => "street_to_coords"})
+  get("/street_to_coords/results", { :controller => "coordinates", :action => "street_to_coords_results"})
+
 end
